@@ -1,0 +1,33 @@
+/* Inter, by Rasmus Andersson: https://rsms.me/inter/ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* variables */
+:root {
+  --gray: #D0D0D0;
+  --black: #000;
+}
+
+/* reset inspired by Josh Gauthreaux: https://bit.ly/39vQizj*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--gray);
+}
+
+/* */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: var(--black);
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+#topnav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 62px;
+}

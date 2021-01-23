@@ -1,0 +1,12 @@
+<header id="topnav">
+    <nav>
+        <a id="logo" href="{{ site.url }}">{{ site.title }}</a>
+        <ul id="nav-pages">
+            {% for page in site.pages %}
+                {% if page.title %}
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+</header>

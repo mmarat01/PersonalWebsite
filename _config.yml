@@ -21,14 +21,15 @@
 title: Mijael Maratuech Seminario
 email: mijael.maratuech@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal website and blog
+  Mijael's personal website (blog, portfolio of projects)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "mmarat01.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://mmarat01.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username: mijael-ms
+github_username:  mmarat01
+include: [_pages]
 
 # Build settings
-markdonw: kramdown
+markdown: kramdown
 theme: null
 plugins:
   - jekyll-feed
