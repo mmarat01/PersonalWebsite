@@ -1,1 +1,1 @@
- # building with jekyll atm #
+ # building with jekyll (ruby/liquid), javascript (and python?) atm #
