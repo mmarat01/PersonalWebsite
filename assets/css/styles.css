@@ -1,0 +1,63 @@
+/* Inter, by Rasmus Andersson: https://rsms.me/inter/ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* variables (& other stuff?) */
+:root {
+  --main-gray: #D0D0D0;
+  --alt-gray: #B4B4B4;
+  --black: #000;
+  --container-maxwidth: 1000px;
+  --container-padding: 1.4rem;
+}
+
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em; /* base font 10px */
+}
+
+/* */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4em;
+  color: var(--black);
+  text-decoration: none;
+  line-height: 1.5;
+  background-color: var(--main-gray);
+  min-height: 100vh;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--container-maxwidth);
+  padding: var(--container-padding);
+}
+
+#navbar{
+  background-color: var(--alt-gray);
+  border-bottom: 2px solid var(--black);
+  height: 6.4rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#navbar-container{ 
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footing {
+  background-color: var(--alt-gray);
+  border-top: 2px solid var(--black);
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
