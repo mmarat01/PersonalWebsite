@@ -1,12 +1,25 @@
+<!-- {% if unicode.funky_looking %} 'it is an emoji' {% endif %} -->
 <header id="navbar">
     <nav class="container" id="navbar-container">
-        <a id="logo" href="{{ site.url }}">{{ site.title }}</a>
-        <ul id="nav-pages">
-            {% for page in site.pages %}
-                {% if page.title %}
-                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
+        <a id="logo" href="{{ site.url }}">&#x1F4BB; {{ site.title }}</a>
+        <div id="nav-menu">
+            <ul id="nav-pages">
+                {%- assign my_pages = "About,Posts,Links" | split: ',' -%}
+                {% for page in my_pages %}
+                <li class="page-item">
+                    <a class="page-link" href="/{{ page }}/">
+                        {% if page == 'About' %} 
+                            &#x26A1;
+                        {% elsif page == 'Posts' %}
+                            &#x1F4DD;
+                        {% elsif page == 'Links' %}
+                            &#x1F517;
+                        {% endif %} 	
+                        {{ page }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </nav>
 </header>
