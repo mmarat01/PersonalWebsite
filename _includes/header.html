@@ -7,7 +7,7 @@
                 {%- assign my_pages = "About,Posts,Links" | split: ',' -%}
                 {% for page in my_pages %}
                 <li class="page-item">
-                    <a class="page-link" href="/{{ page }}/">
+                    <a class="page-link" href="/{{ page | downcase }}/">
                         {% if page == 'About' %} 
                             &#x26A1;
                         {% elsif page == 'Posts' %}
