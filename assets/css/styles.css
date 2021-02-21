@@ -61,11 +61,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #navbar{
-  background-color: var(--main-gray);
+  /* background-color: var(--main-gray); */
+  background-color: rgb(37, 37, 37);
   border-bottom: 2px solid var(--black);
-  grid-area: header;
-  /* box-shadow: 0 1px 4px #797878; */
   height: var(--nav-height);
+  grid-area: header;
   position: fixed;
   top: 0;
   left: 0;
@@ -73,9 +73,10 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
 }
 
-#navbar a{
+#logo, .page-link{
   text-decoration: none;
-  color: var(--black);
+  /* color: var(--black); */
+  color: white;
 }
 
 #navbar-container{ 
@@ -91,9 +92,10 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 600;
 }
 
-#nav-pages li{
+.page-item{
   padding: 1rem;
-  /* display: block; */
+  display: block;
+  border-radius: 15px;
 }
 
 #logo{
@@ -102,17 +104,20 @@ h1, h2, h3, h4, h5, h6{
 
 #footing {
   grid-area: footer;
-  background-color: var(--main-gray);
+  /* background-color: var(--main-gray); */
+  background-color: rgb(37,37,37);
   min-height: var(--nav-height);
   border-top: 2px solid var(--black);
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 #footing a{
-  color: var(--black);
+  /* color: var(--black); */
+  color: white;
   font-weight: 300;
 }
 
